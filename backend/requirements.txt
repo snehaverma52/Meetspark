@@ -1,0 +1,10 @@
+flask
+flask-cors
+moviepy
+faster-whisper
+transformers
+keybert
+reportlab
+pymongo
+torch
+sentence-transformers

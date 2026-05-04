@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- 🔥 THEME FIX (ADD THIS) -->
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "system";
+        const root = document.documentElement;
+
+        if (savedTheme === "dark") {
+          root.classList.add("dark");
+        } else if (savedTheme === "light") {
+          root.classList.remove("dark");
+        } else {
+          const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (isDark) {
+            root.classList.add("dark");
+          } else {
+            root.classList.remove("dark");
+          }
+        }
+      })();
+    </script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/logo.png" />
+    <link rel="shortcut icon" href="/logo.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetSum AI</title>
+
+    <meta name="description" content="AI meeting summaries platform" />
+    <meta name="author" content="MeetSum AI" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </body>
+</html>
