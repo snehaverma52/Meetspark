@@ -254,7 +254,37 @@ ffmpeg -version
 
 ---
 
-# 📸 Screenshots
+# 📸 Project Screenshots
+
+## 🖥️ Dashboard UI
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+## 🔐 Secure File Validation
+
+![Scanner](assets/screenshots/scanner.png)
+
+---
+
+## 🧠 AI Generated Summary
+
+![Summary](assets/screenshots/summary.png)
+
+---
+
+## 🔔 Notification System
+
+![Notification](assets/screenshots/notification.png)
+
+---
+
+# 📄 Research Paper
+
+📥 Download Research Paper:
+
+[Download Here](https://doi.org/10.32628/IJSRST2613376)
 
 
 
